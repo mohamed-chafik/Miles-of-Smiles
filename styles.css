@@ -2,6 +2,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    overflow-x: hidden;
 }
 
 .header {
@@ -11,6 +12,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
+    height: 100vh;
 }
 
 .header-container {
@@ -63,4 +65,73 @@
     max-width: 100%;
     height: auto;
     clip-path: polygon(50% 0%, 100% 0, 100% 100%, 0% 100%);
+}
+
+
+/* banefits section */
+.benefits_section{
+    width: 100%;
+    height: 100vh;
+    background-color: #192d39;
+    overflow: hidden;
+}
+.top{
+    width: 100%;
+    height: 10%;
+    display: flex;
+    justify-content: center;
+    color: #fff;
+    margin-top: 20px;
+}
+.content{
+    width: 100%;
+    height: 90%;
+    display: flex;
+    margin: 20px;
+}
+.vector{
+    width: 40%;
+    height: 82%;
+    border-radius: 10px;
+    overflow: hidden;
+    margin-right: 20px;
+}
+.vector img{
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+}
+.benefits{
+    width: 50%;
+}
+
+.benefits {
+    display: flex;
+    align-items: center;
+    justify-content: center; 
+    padding: 20px; 
+}
+
+.benefits-list {
+    list-style-type: none; 
+    padding-left: 0; 
+    font-size: 1.2rem; 
+    color: #fff; 
+    line-height: 1.6; 
+}
+
+.benefits-list li {
+    margin: 10px 0;
+    padding-left: 35px; 
+    position: relative; 
+}
+
+.benefits-list li::before {
+    content: "✔"; 
+    color: #0088cc; 
+    font-size: 1.5rem; 
+    position: absolute; 
+    left: 0; 
+    top: 50%; 
+    transform: translateY(-50%); 
 }
