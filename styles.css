@@ -3,6 +3,7 @@
     padding: 0;
     box-sizing: border-box;
     overflow-x: hidden;
+    font-family: 'Chivo Mono', sans-serif;                                          
 }
 
 .header {
@@ -82,6 +83,7 @@
     justify-content: center;
     color: #fff;
     margin-top: 20px;
+    margin-bottom: 0px;
 }
 .content{
     width: 100%;
@@ -115,7 +117,7 @@
 .benefits-list {
     list-style-type: none; 
     padding-left: 0; 
-    font-size: 1.2rem; 
+    font-size: 2rem; 
     color: #fff; 
     line-height: 1.6; 
 }
@@ -225,7 +227,7 @@
   height: 80%;
   display: flex;
   justify-content: space-around;
-  margin-top: 40px;
+  margin-top: 0px;
   align-items: center;
   }
 
@@ -410,14 +412,14 @@
   left: 10px;
   top: 15px;
   color: #355891;
-  font-size: 0.9em;
+  font-size: 2em;
   cursor: text;
   transition: 0.3s ease;
 }
 
 .form label .input:placeholder-shown + span {
   top: 15px;
-  font-size: 0.9em;
+  font-size: 1em;
 }
 
 .form label .input:focus + span,.form label .input:valid + span {
@@ -450,12 +452,12 @@
 
 .form label .input01:placeholder-shown + span {
   top: 40px;
-  font-size: 0.9em;
+  font-size: 1.5em;
 }
 
 .form label .input01:focus + span,.form label .input01:valid + span {
   top: 50px;
-  font-size: 0.7em;
+  font-size: 0.8em;
   font-weight: 600;
 }
 
@@ -501,7 +503,7 @@
 }
 
 .fancy .text {
-  font-size: 1.125em;
+  font-size: 1.5em;
   line-height: 1.33333em;
   padding-left: 2em;
   display: block;
@@ -568,3 +570,86 @@
   right: 0;
   width: 0;
 }
+
+/* footer */
+
+.footer-section {
+    background-color: #333;
+    color: #fff;
+    padding: 20px 0;
+    text-align: center;
+}
+
+.footer-container h2 {
+    margin: 0;
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.footer-container p {
+    margin: 5px 0;
+    font-size: 14px;
+}
+
+.social-icons {
+    margin-top: 10px;
+}
+
+.social-icons a {
+    display: inline-block;
+    margin: 0 10px;
+}
+
+.social-icons img {
+    width: 30px;
+    height: 30px;
+}
+
+/* modal */
+.modal {
+    display: none; 
+    position: fixed; 
+    z-index: 1; 
+    left: 0;
+    top: 0;
+    width: 100%; 
+    height: 100%; 
+    overflow: auto; 
+    background-color: rgba(0, 0, 0, 0.4); 
+}
+
+.modal button{
+    margin-top: 0px;
+}
+
+.modal-container {
+    background-color: #192d39;
+    margin: 15% auto; 
+    padding: 20px;
+    border: 1px solid #355891;
+    width: 80%; 
+    max-width: 400px;
+    border-radius: 10px;
+    text-align: center;
+}
+
+.close {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+    color: #000;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.modal-container p {
+    margin-bottom: 20px;
+    color: #fff;
+    font-size: 1.2em;
+}
+
