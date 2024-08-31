@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.cdnfonts.com/css/chivo-mono" rel="stylesheet">
 </head>
 <body>
     <div class="joining_form">
@@ -16,27 +17,27 @@
     <div class="flex">
         <label>
             <input class="input" type="text" placeholder="" required="">
-            <span>first name</span>
+            <span>First Name</span>
         </label>
 
         <label>
             <input class="input" type="text" placeholder="" required="">
-            <span>last name</span>
+            <span>Last Name</span>
         </label>
     </div>  
             
     <label>
         <input class="input" type="email" placeholder="" required="">
-        <span>email</span>
+        <span>Email</span>
     </label> 
         
     <label>
         <input class="input" placeholder="" type="tel" required="">
-        <span>contact number</span>
+        <span>Contact Number</span>
     </label>
     <label>
         <textarea class="input01" placeholder="" rows="3" required=""></textarea>
-        <span>Why you want to join</span>
+        <span>What motivates you?</span>
     </label>
     
     <button href="#" class="fancy">
@@ -50,5 +51,36 @@
             <div class="right"></div>
           </div>
     </div>
+    <div class="footer-section">
+        <div class="footer-container">
+            <h2>Miles for Smiles</h2>
+            <p>1234 Running Street, Marathonville</p>
+            <p>Phone: 012 3456789</p>
+            <p>&copy; 2024 Miles for Smiles</p>
+            <div class="social-icons">
+                <a href="https://www.instagram.com" target="_blank">
+                    <img src="Assets/instagram.png" alt="Instagram">
+                </a>
+                <a href="https://www.facebook.com" target="_blank">
+                    <img src="Assets/facebook.png" alt="Facebook">
+                </a>
+                <a href="https://www.x.com" target="_blank">
+                    <img src="Assets/x.png" alt="X (formerly Twitter)">
+                </a>
+            </div>
+        </div>
+    </div>
+    <div id="successModal" class="modal">
+        <div class="modal-container">
+            <p>You have successfully applied to join the club!</p>
+            <button id="closeModalButton" class="button">
+                <span class="top-key"></span>
+                <span class="text">ok</span>
+                <span class="bottom-key-1"></span>
+                <span class="bottom-key-2"></span>
+            </button>
+        </div>
+    </div>
+    <script src="app.js"></script>
 </body>
 </html>
