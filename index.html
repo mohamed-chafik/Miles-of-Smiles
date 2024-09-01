@@ -6,9 +6,12 @@
     <title>Smiles for Miles</title>
     <link rel="stylesheet" href="styles.css">
     <link href="https://fonts.cdnfonts.com/css/chivo-mono" rel="stylesheet">
+    <style>
+        
+    </style>
 </head>
 <body>
-    <div class="header">
+    <section class="header" id="header">
         <div class="header-container">
             <div class="left-section">
                 <img src="Assets/logo.png" alt="" class="logo">
@@ -19,8 +22,20 @@
                 <img src="Assets/runner.jpg" alt="" class="cover-image">
             </div>
         </div>
+              
+    </section>
+
+    <!-- Scroll Buttons -->
+    <div class="scroll-buttons">
+        
+            <input  class="input" id="header-" type="radio" name="radio"value="header"  onchange="scrollToSection('header')"/>
+
+        <input class="input" id="benefits-" type="radio" name="radio"  value="benefits_section" onchange="scrollToSection('benefits')"/>
+        
+        <input class="input" id="events-" type="radio" name="radio"value="Events_section" onchange="scrollToSection('events')"/>
     </div>
-    <div class="benefits_section">
+
+    <section class="benefits_section" id="benefits">
         <div class="top"><h1>Benefits Of Joining</h1></div>
         <div class="content">
             <div class="vector"><img src="Assets/360_F_228858108_bK3t2Dpw09mShxcPaaalRQrNnA2SHeEj.jpg" alt=""></div>
@@ -31,99 +46,18 @@
                     <li>Access to Exclusive Events</li>
                     <li>Community Engagement</li>
                 </ul>
-    
-
             </div>
         </div>
-    </div>
-    <div class="Events_section">
+    </section>
+
+    <section class="Events_section" id="events">
         <div class="top"><h1>Our Events</h1></div>
         <div class="cards">
-        <div class="card">
-            <div class="header">
-                <div class="img-box">
-                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
-                        <path fill="none" d="M0 0h24v24H0z"></path>
-                        <path d="M20.083 15.2l1.202.721a.5.5 0 0 1 0 .858l-8.77 5.262a1 1 0 0 1-1.03 0l-8.77-5.262a.5.5 0 0 1 0-.858l1.202-.721L12 20.05l8.083-4.85zm0-4.7l1.202.721a.5.5 0 0 1 0 .858L12 17.65l-9.285-5.571a.5.5 0 0 1 0-.858l1.202-.721L12 15.35l8.083-4.85zm-7.569-9.191l8.771 5.262a.5.5 0 0 1 0 .858L12 13 2.715 7.429a.5.5 0 0 1 0-.858l8.77-5.262a1 1 0 0 1 1.03 0zM12 3.332L5.887 7 12 10.668 18.113 7 12 3.332z" fill="rgba(66,193,110,1)"></path>
-                    </svg>
-                </div>
-                <span class="title">Event</span></div>
-        
-            <div id="content">
-                <p>
-                    Lorem ipsum dolor sit tali amet, consectus uy
-                    adipiscing it amet it...
-                </p>
-        
-                <a class="btn-link">Read More...</a>
-            </div>
+            <!-- Event cards go here -->
         </div>
+    </section>
 
-        <div class="card">
-            <div class="header">
-                <div class="img-box">
-                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
-                        <path fill="none" d="M0 0h24v24H0z"></path>
-                        <path d="M20.083 15.2l1.202.721a.5.5 0 0 1 0 .858l-8.77 5.262a1 1 0 0 1-1.03 0l-8.77-5.262a.5.5 0 0 1 0-.858l1.202-.721L12 20.05l8.083-4.85zm0-4.7l1.202.721a.5.5 0 0 1 0 .858L12 17.65l-9.285-5.571a.5.5 0 0 1 0-.858l1.202-.721L12 15.35l8.083-4.85zm-7.569-9.191l8.771 5.262a.5.5 0 0 1 0 .858L12 13 2.715 7.429a.5.5 0 0 1 0-.858l8.77-5.262a1 1 0 0 1 1.03 0zM12 3.332L5.887 7 12 10.668 18.113 7 12 3.332z" fill="rgba(66,193,110,1)"></path>
-                    </svg>
-                </div>
-                <span class="title">Event
-            </span></div>
-        
-            <div id="content">
-                <p>
-                    Lorem ipsum dolor sit tali amet, consectus uy
-                    adipiscing it amet it...
-                </p>
-        
-                <a class="btn-link">Read More...</a>
-            </div>
-        </div>
-
-        <div class="card">
-            <div class="header">
-                <div class="img-box">
-                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
-                        <path fill="none" d="M0 0h24v24H0z"></path>
-                        <path d="M20.083 15.2l1.202.721a.5.5 0 0 1 0 .858l-8.77 5.262a1 1 0 0 1-1.03 0l-8.77-5.262a.5.5 0 0 1 0-.858l1.202-.721L12 20.05l8.083-4.85zm0-4.7l1.202.721a.5.5 0 0 1 0 .858L12 17.65l-9.285-5.571a.5.5 0 0 1 0-.858l1.202-.721L12 15.35l8.083-4.85zm-7.569-9.191l8.771 5.262a.5.5 0 0 1 0 .858L12 13 2.715 7.429a.5.5 0 0 1 0-.858l8.77-5.262a1 1 0 0 1 1.03 0zM12 3.332L5.887 7 12 10.668 18.113 7 12 3.332z" fill="rgba(66,193,110,1)"></path>
-                    </svg>
-                </div>
-                <span class="title">Event
-            </span></div>
-        
-            <div id="content">
-                <p>
-                    Lorem ipsum dolor sit tali amet, consectus uy
-                    adipiscing it amet it...
-                </p>
-        
-                <a class="btn-link">Read More...</a>
-            </div>
-        </div>
-        
-        <div class="card">
-            <div class="header">
-                <div class="img-box">
-                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
-                        <path fill="none" d="M0 0h24v24H0z"></path>
-                        <path d="M20.083 15.2l1.202.721a.5.5 0 0 1 0 .858l-8.77 5.262a1 1 0 0 1-1.03 0l-8.77-5.262a.5.5 0 0 1 0-.858l1.202-.721L12 20.05l8.083-4.85zm0-4.7l1.202.721a.5.5 0 0 1 0 .858L12 17.65l-9.285-5.571a.5.5 0 0 1 0-.858l1.202-.721L12 15.35l8.083-4.85zm-7.569-9.191l8.771 5.262a.5.5 0 0 1 0 .858L12 13 2.715 7.429a.5.5 0 0 1 0-.858l8.77-5.262a1 1 0 0 1 1.03 0zM12 3.332L5.887 7 12 10.668 18.113 7 12 3.332z" fill="rgba(66,193,110,1)"></path>
-                    </svg>
-                </div>
-                <span class="title">Event
-            </span></div>
-        
-            <div id="content">
-                <p>
-                    Lorem ipsum dolor sit tali amet, consectus uy
-                    adipiscing it amet it...
-                </p>
-        
-                <a class="btn-link">Read More...</a>
-            </div>
-        </div>
-    </div>
-    </div>
-    <div class="footer-section">
+    <div class="footer-section" id="footer">
         <div class="footer-container">
             <h2>Miles for Smiles</h2>
             <p>1234 Running Lane, Marathon City</p>
@@ -141,6 +75,7 @@
                 </a>
             </div>
         </div>
-    </div>
+    </>
+    <script src="app.js"></script>
 </body>
 </html>
