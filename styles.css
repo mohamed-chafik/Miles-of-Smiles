@@ -543,6 +543,7 @@ html{
 .form label .input:placeholder-shown + span {
   top: 15px;
   font-size: 1em;
+  color: #fff;
 }
 
 .form label .input:focus + span,.form label .input:valid + span {
