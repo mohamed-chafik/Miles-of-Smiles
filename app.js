@@ -48,4 +48,8 @@ window.addEventListener("click", function(event) {
     }
 });
 
-
+window.addEventListener("load", function() {
+    setTimeout(function() {
+        document.getElementById("loader-container").style.display = "none";
+    }, 2); // 2 seconds
+});
