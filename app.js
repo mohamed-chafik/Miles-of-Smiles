@@ -1,3 +1,12 @@
+window.onload = function() {
+    document.getElementById("loader-container").style.display = "flex";
+};
+window.addEventListener("load", function() {
+    setTimeout(function() {
+        document.getElementById("loader-container").style.display = "none";
+    }, 2000);
+});
+
 // vertical nav bar
 function scrollToSection(sectionId) {
     document.getElementById(sectionId).scrollIntoView({
@@ -48,8 +57,3 @@ window.addEventListener("click", function(event) {
     }
 });
 
-window.addEventListener("load", function() {
-    setTimeout(function() {
-        document.getElementById("loader-container").style.display = "none";
-    }, 2); // 2 seconds
-});
