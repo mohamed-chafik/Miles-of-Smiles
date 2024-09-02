@@ -242,6 +242,7 @@ html{
   display: flex;
   flex-direction: column;
   gap: 26px;
+  z-index: 999;
 }
 
 .scroll-button {
@@ -777,3 +778,128 @@ html{
     font-size: 1.2em;
 }
 
+
+
+
+/* Blogs page */
+.blogs{
+  background-color: #192d39;
+  height: 100vh;
+  width: 100%;
+  
+}
+.head1{
+  justify-content: flex-start;
+  display: flex;
+  align-items: center;
+  margin-left: 61px;
+}
+.head1 img{
+  width: 57px;
+  margin-bottom: 0;
+}
+.More-blogs{
+  display: flex;
+  justify-content: center;
+}
+.cont{
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+header {
+  width: 90%;
+  max-width: 1240px;
+  margin: 0 auto;
+  background: #202222;
+  color:#fff;
+  margin-bottom: 10px;
+  margin-top: 10px;
+
+}
+.band {
+  width: 90%;
+  max-width: 1240px;
+  margin: 0 auto;
+  background: #202222;
+
+  display: grid;
+  margin-bottom: 105px;
+  grid-template-columns: 1fr;
+  grid-template-rows: auto;
+  grid-gap: 20px;
+  
+  @media (min-width: 30em) {
+    grid-template-columns: 1fr 1fr;
+  }
+  
+  @media (min-width: 60em) {
+    grid-template-columns: repeat(4, 1fr);
+  }
+}
+
+.card1 {
+  background: white;
+  text-decoration: none;
+  color: #444;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+  display: flex;
+  flex-direction: column;
+  min-height: 100%;
+  position: relative;
+  top: 0;
+  transition: all .1s ease-in;
+    
+  &:hover {
+    top: -2px;
+    box-shadow: 0 4px 5px rgba(0,0,0,0.2);
+  }
+  
+  article {
+    padding: 20px;
+    flex: 1;
+    background-color: #121212;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+  }
+  
+  h1 {
+    font-size: 20px;
+    margin: 0;
+    color: #fff;
+  }
+  
+  p {
+    flex: 1;
+    line-height: 1.4;
+    color: #6e6e6e;
+  }
+  
+  span {
+    font-size: 12px;
+    font-weight: bold;
+    color: #999;
+    text-transform: uppercase;
+    letter-spacing: .05em;
+    margin: 2em 0 0 0;
+  }
+  
+  .thumb {
+    padding-bottom: 60%;
+    background-size: cover;
+    background-position: center center;
+  }
+}
+
+.item-1 {
+  @media (min-width: 60em) {
+    grid-column: 1 / span 2;
+    
+    h1 {
+      font-size: 24px;
+    }
+  }
+}
