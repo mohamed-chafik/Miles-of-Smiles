@@ -1,4 +1,5 @@
 
+
 * {
   margin: 0;
   padding: 0;
@@ -97,7 +98,7 @@ font-weight: 600;
 li span {
 position: absolute;
 line-height: 25px;
-
+overflow: hidden;
 }
 
 
@@ -971,4 +972,20 @@ animation:
 49.99%{transform:scaleY(1)  rotate(135deg)}
 50%   {transform:scaleY(-1) rotate(0deg)}
 100%  {transform:scaleY(-1) rotate(-135deg)}
+}
+
+/* floating animation */
+.introduction span {
+  display: inline-block;
+  position: relative;
+  animation: float 2s ease-in-out infinite;
+}
+
+@keyframes float {
+  0%, 100% {
+      transform: translateY(0);
+  }
+  50% {
+      transform: translateY(-10px); /* Adjust the value to control float height */
+  }
 }
